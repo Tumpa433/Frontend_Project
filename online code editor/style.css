@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(1, 18, 58);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.ediors{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+textarea{
+    height: 150px;
+    background-color: rgb(59, 24, 62);
+    color: white;
+    border: none;
+    padding: 20px;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(234, 231, 231, 0.818);
+    border-radius: 10px;
+
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(102, 77, 178);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(247, 244, 246);
+}
+
+button:hover{
+    background-color: rgb(76, 8, 99);
+}
+
+iframe{
+    height: 200px;
+    background-color: azure;
+    border: 1px solid rgb(63, 5, 5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(247, 244, 246);
+}
+
+/* Responsive Design */
+
+@media(min-width:768px){
+    .ediors{
+        flex-direction: row;
+    }
+    textarea{
+        flex: 1;
+    }
+}
